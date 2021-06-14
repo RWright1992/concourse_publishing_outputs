@@ -32,7 +32,8 @@ jobs:
           outputs:
             - name: updated-gist
           run:
-            path: resource-tutorial/bump-timestamp-file.sh
+            path: /bin/sh
+            args: ["resource-tutorial/bump-timestamp-file.sh"]
 
       - put: resource-gist
         params:
